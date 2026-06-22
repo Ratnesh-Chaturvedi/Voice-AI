@@ -10,13 +10,7 @@ export default async function TestPage(){
             count of voices:{voices.length}
             <div>
 
-            {voices.map((item)=>(
-                <div key={item.id}>
-                <h1>{item.name}</h1>
-                <h1>{item.variant}</h1>
-            </div>
-            ))}    
-
+           I made changes in the test folder
             </div>
             
         </div>
