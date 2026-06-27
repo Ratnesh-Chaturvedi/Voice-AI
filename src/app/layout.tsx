@@ -5,7 +5,11 @@ import "./globals.css";
 
 
 export const metadata: Metadata = {
-  title: "Voice-Ai",
+  title:{
+    default:"Voice-AI",
+    // this is for if we visit any page so it should be written like page | Voice-AI
+    template:"%s | Voice-AI"
+  },
   description: "Generated your Customized Voice",
 };
 

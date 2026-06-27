@@ -17,14 +17,14 @@ export default function  PageHeader({title,className}:{title:string;className?:s
         <h1 className="text-lg font-semibold tracking-tight">{title}</h1>
       </div>
       <div className="flex items-center gap-3">
-         <Button variant="outline" size="sm" >
-            <Link className="flex gap-2  items-center lg:hidden" href="mailto:chaturvediratnesh16@gmail.com">
+         <Button variant="outline" size="sm"  >
+            <Link className="flex gap-2  items-center" href="mailto:chaturvediratnesh16@gmail.com">
               <ThumbsUp />
               <span className="hidden lg:block">Feedback</span>
             </Link>
          </Button>
          <Button variant="outline" size="sm" >
-          <Link className="flex gap-2  items-center lg:hidden" href="mailto:chaturvediratnesh16@gmail.com">
+          <Link className="flex gap-2  items-center " href="mailto:chaturvediratnesh16@gmail.com">
             <Headphones />
             <span className="hidden lg:block">Need help?</span>
           </Link>
