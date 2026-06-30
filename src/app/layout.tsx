@@ -2,8 +2,8 @@
 import type { Metadata } from "next";
 import { ClerkProvider} from '@clerk/nextjs'
 import "./globals.css";
-
-
+import { TRPCReactProvider } from "@/trpc/client";
+import {Toaster} from "@/components/ui/sonner"
 export const metadata: Metadata = {
   title:{
     default:"Voice-AI",
@@ -23,13 +23,18 @@ export default function RootLayout({
   
   return (
     <ClerkProvider>
+      <TRPCReactProvider>
 
     <html
       lang="en"
       className={` h-full antialiased ` }
       >
-      <body className={`min-h-full flex flex-col `}>{children}</body>
+      <body className={`min-h-full flex flex-col `}>{children}
+
+        <Toaster/>
+      </body>
     </html>
+        </TRPCReactProvider>
       </ClerkProvider>
   );
 }
